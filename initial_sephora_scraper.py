@@ -14,7 +14,7 @@ params = {
   'apiversion': 5.4
 }
 
-reviews = []
+reviews = [] # each review is an element of this array (e.g. reviews[0] will display first review)
 loop = 0
 
 while True:
@@ -22,11 +22,11 @@ while True:
     
     r = requests.get(url, params=params)
 
-    if (r.status_code != 200) or (len(reviews) >= r.json()['TotalResults']):
+    if (r.status_code != 200) or (len(reviews) >= 6):
         break
 
     reviews.extend(r.json()['Results'])
 
     time.sleep(0.5)
 
-    print(len(reviews))
+    print(reviews[0])
