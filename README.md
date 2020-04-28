@@ -1,3 +1,4 @@
 # SephoraReviews
 
-In this mini project, I scraped the reviews for all the foundation brands on www.sephora.com. Since I was unable to scrape the data directly from Sephora's website, I scraped Sephora's API. 
+In this mini project, I scraped the reviews for all the foundation brands on www.sephora.com by scraping Sephora's API. The purpose of this was to familiarize myself with web scraping. 
+
